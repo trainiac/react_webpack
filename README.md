@@ -1,4 +1,4 @@
-# Slush React-webpack [![Build Status](https://secure.travis-ci.org/adrian/slush-react-webpack.png?branch=master)](https://travis-ci.org/adrian/slush-react-webpack) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-react-webpack.png)](http://badges.enytc.com/for/npm/slush-react-webpack)
+# Slush React-webpack
 
 > A generator for making a react webpack dev server for quick ui development
 
@@ -22,7 +22,7 @@ $ mkdir my-slush-react-webpack
 Run the generator from within the new folder:
 
 ```bash
-$ cd my-slush-react-webpack && slush react_webpack
+$ cd my-slush-react-webpack && slush react-webpack
 ```
 
 ## Getting To Know Slush
@@ -40,7 +40,7 @@ See the [CONTRIBUTING Guidelines](https://github.com/adrian/slush-react-webpack/
 ## Support
 If you have any problem or suggestion please open an issue [here](https://github.com/adrian/slush-react-webpack/issues).
 
-## License 
+## License
 
 The MIT License
 

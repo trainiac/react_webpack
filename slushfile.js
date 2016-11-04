@@ -25,6 +25,10 @@ gulp.task('default', function (done) {
     }, {
         name: 'appDescription',
         message: 'What is the description?'
+    }, {
+        type: 'confirm',
+        name: 'moveon',
+        message: 'Continue?'
     }];
     //Ask
     inquirer.prompt(prompts,
@@ -34,7 +38,7 @@ gulp.task('default', function (done) {
             }
             answers.appNameSlug = _.slugify(answers.appName);
             gulp.src(__dirname + '/templates/**')
-                .pipe(template(answers))
+                .pipe(template(answers, {interpolate: /<%=([\s\S]+?)%>/g}))
                 .pipe(rename(function (file) {
                     if (file.basename[0] === '_') {
                         file.basename = '.' + file.basename.slice(1);

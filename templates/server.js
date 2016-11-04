@@ -1,6 +1,8 @@
-var webpack = require('webpack');
-var WebpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.config');
+import webpack from 'webpack'
+import WebpackDevServer from 'webpack-dev-server'
+import config from './webpack.config'
+
+const port = 3000
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
@@ -9,10 +11,15 @@ new WebpackDevServer(webpack(config), {
   stats: {
     colors: true
   }
-}).listen(3000, 'localhost', function (err) {
+})
+.listen(port, 'localhost', err => {
+
   if (err) {
-    console.log(err);
+
+    console.log(err)  // eslint-disable-line no-console
+
   }
 
-  console.log('Listening at localhost:3000');
-});
+  console.log(`Listening at localhost:${port}`) // eslint-disable-line no-console
+
+})

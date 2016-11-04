@@ -66,6 +66,7 @@ const findSpecialStyleKeys = context => (next, classNameStyles, className) => {
   if (states) {
 
     const stateClassNames = _.mapKeys(toStateClassName(className))(states)
+
     next.cssStyles = _.assign(stateClassNames)(next.cssStyles)
 
   }
@@ -96,6 +97,7 @@ const getClassNameFunc = context => (classNameStyles, className) => {
 
   let stylesToApply = [context.styleSheet[className]]
   const helperStyleSheetStyles = context.helpers[className]
+
   if (helperStyleSheetStyles) {
 
     stylesToApply = [...stylesToApply, ...helperStyleSheetStyles]

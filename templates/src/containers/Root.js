@@ -1,13 +1,11 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 
-export default class Root extends PureComponent {
-  render() {
+export default function Root() {
 
-    return (
-        <div>
-          {/* add markup here */}
-        </div>
-    )
+  return (
+    <div>
+      {/* add markup here */}
+    </div>
+  )
 
-  }
 }

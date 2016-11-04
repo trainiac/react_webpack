@@ -2,13 +2,20 @@ import _ from 'lodash/fp'
 import { isValidElement } from 'react'
 import { girdleGlobals } from './girdle'
 
+export const ref = (context, propName) =>
+   ({
+     ref: el => context[propName] = el // eslint-disable-line no-return-assign
+   })
+
 export const isTypeComponent = type => child =>
   isValidElement(child) && _.get('type.displayName')(child) === type
 
 export const trace = (tag, func) => input => {
 
   const value = func(input)
+
   console.log(tag, value)  // eslint-disable-line no-console
+
   return value
 
 }

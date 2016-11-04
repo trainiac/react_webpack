@@ -16,9 +16,10 @@ if (module.hot) {
   module.hot.accept('./containers/Root', () => {
 
     const RootContainer = require('./containers/Root').default  // eslint-disable-line global-require
+
     render(
       <AppContainer>
-        <RootContainer />
+        <RootContainer/>
       </AppContainer>,
       document.getElementById('root')
     )

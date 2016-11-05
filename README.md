@@ -1,4 +1,4 @@
-# Slush React-webpack
+# Slush react-webpack
 
 > A generator for making a react webpack dev server for quick ui development
 

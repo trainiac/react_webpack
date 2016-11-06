@@ -3,7 +3,10 @@
   "description": "<%=appDescription%>",
   "version": "0.1.0",
   "homepage": "https://github.com/trainiac/<%=appName%>",
-  "author": "Adrian William Adkison <adkison.adrian@gmail.com>",
+  "author": {
+    "name": "Adrian William Adkiosn",
+    "email": "adkison.adrian@gmail.com"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/tainiac/<%=appName%>.git"
@@ -19,8 +22,8 @@
     "lint-fix": "node_modules/.bin/eslint --fix src/",
     "develop": "node_modules/.bin/babel-node --debug server.js"
   },
+  "main": "server.js",
   "keywords": [
-    "babel",
     "react",
     "webpack"
   ],
@@ -30,6 +33,7 @@
   },
   "dependencies": {
     "aphrodite": "0.6.0",
+    "babel-polyfill": "6.16.0",
     "jquery": "3.1.1",
     "lodash": "4.16.4",
     "react": "15.3.2",

@@ -1,0 +1,13 @@
+{
+  "bail": true,
+  "verbose": true,
+  "notify": true,
+  "scriptPreprocessor":"./node_modules/babel-jest",
+  "testPathIgnorePatterns": [
+    "./node_modules",
+    "./coverage",
+    "./dist",
+    "./build"
+  ],
+  "testRegex": "\\.test\\.js"
+}

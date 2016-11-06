@@ -1,0 +1,31 @@
+{
+  "bail": true,
+  "verbose": true,
+  "notify": true,
+  "scriptPreprocessor":"./node_modules/babel-jest",
+  "testPathIgnorePatterns": [
+    "./node_modules",
+    "./coverage",
+    "./dist",
+    "./build"
+  ],
+  "testRegex": "\\.test\\.js",
+  "collectCoverageFrom": ["**/*.js", "!**/node_modules/**"],
+  "collectCoverage": true,
+  "coverageDirectory": "./coverage",
+  "coveragePathIgnorePatterns": [
+    "./node_modules",
+    "./test",
+    "./coverage",
+    "./dist",
+    "./build"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100
+    }
+  }
+}

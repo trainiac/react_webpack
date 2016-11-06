@@ -1,4 +1,3 @@
-require('./styles/normalize.css') // eslint-disable-line no-unused-vars
 import React from 'react'
 import { render } from 'react-dom'
 import { AppContainer } from 'react-hot-loader'

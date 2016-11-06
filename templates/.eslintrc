@@ -15,6 +15,7 @@
     },
     "parser": "babel-eslint",
     "env": {
+        "jest": true,
         "browser": true,
         "node": true,
         "es6": true
@@ -62,6 +63,7 @@
 
         //JSX
         "react/jsx-boolean-value": "off",
+        "newline-per-chained-call": "off",
 
         // Possible Errors
         "no-console": "warn",
@@ -168,12 +170,6 @@
         ],
         "newline-after-var": "warn",
         "newline-before-return": "warn",
-        "newline-per-chained-call": [
-            "warn",
-            {
-                "ignoreChainWithDepth": 1
-            }
-        ],
         "no-lonely-if": "warn",
         "no-mixed-spaces-and-tabs": "warn",
         "no-multiple-empty-lines": "warn",
@@ -263,7 +259,7 @@
         "react/jsx-handler-names": "warn",
         "react/jsx-indent": ["warn", 2],
         "react/jsx-indent-props": ["warn", 2],
-        "react/jsx-max-props-per-line": ["warn", { "maximum": 1 }],
+        "react/jsx-max-props-per-line": ["warn", { "maximum": 2 }],
         "react/jsx-no-bind": "warn",
         "react/jsx-no-comment-textnodes": "warn",
         "react/jsx-no-target-blank": "warn",

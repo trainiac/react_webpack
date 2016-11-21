@@ -1,0 +1,26 @@
+{
+  "bail": true,
+  "verbose": true,
+  "notify": true,
+  "scriptPreprocessor": "./node_modules/babel-jest",
+  "testPathDirs": [
+    "<rootDir>/server"
+  ],
+  "testRegex": "\\.test\\.js",
+  "testEnvironment": "node",
+  "collectCoverageFrom": ["**/server/*.js"],
+  "collectCoverage": true,
+  "coverageDirectory": "<rootDir>/server/coverage",
+  "coveragePathIgnorePatterns": [
+    "<rootDir>/server/coverage",
+    "<rootDir>/server/test",
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100
+    }
+  }
+}

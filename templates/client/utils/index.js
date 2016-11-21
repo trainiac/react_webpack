@@ -7,6 +7,12 @@ export const ref = (context, propName) =>
      ref: el => context[propName] = el // eslint-disable-line no-return-assign
    })
 
+export function handler(context, handlerName, func) {
+
+  context[handlerName] = func.bind(context)
+
+}
+
 export const isTypeComponent = type => child =>
   isValidElement(child) && _.get('type.displayName')(child) === type
 

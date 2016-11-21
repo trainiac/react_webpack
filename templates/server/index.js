@@ -1,6 +1,6 @@
 import webpack from 'webpack'
 import WebpackDevServer from 'webpack-dev-server'
-import config from './webpack.config'
+import config from '../webpack.config'
 
 const port = 3000
 

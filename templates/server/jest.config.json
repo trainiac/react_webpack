@@ -1,0 +1,11 @@
+{
+  "bail": true,
+  "verbose": true,
+  "notify": true,
+  "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+  "testPathDirs": [
+    "<rootDir>/server"
+  ],
+  "testRegex": "\\.test\\.js",
+  "testEnvironment": "node"
+}
